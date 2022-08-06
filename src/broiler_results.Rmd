@@ -1,11 +1,11 @@
 ---
-title: "Analysis of trial results to evaluate the effect of dietary supplementation of Fish Silage in broilers and pigs in Galapagos"
+title: "Statistical analysis of the effect on growth performance of incorporating fish silage in the diet of pigs and broilers in Galapagos"
 
 subtitle: "Securing a more COVID19-resilient circular economy in the Galapagos Islands"
 author: 
   - name: "Mariano Viz"
     affiliation: "Conservation International"
-date: "21/05/2022"
+date: "July 2022"
 output: 
   html_document:
     code_folding: hide
@@ -43,19 +43,20 @@ general <- read_csv(here("data", "general.csv")) %>%
 
 ## 1. **Overview**
 
-This report provides an exploratory overview of the results obtained in pig and broiler trials designed to assess the effect of dietary supplementation of Fish Silage (FS) from Galapagos fisheries on local productions. TThese trials were implemented by Conservation International between the months of January and May 2022 in the canton of Santa Cruz, Galapagos.
+This report provides an exploratory overview of the results obtained in pig and broiler trials designed to assess the effect of dietary supplementation of Fish Silage (FS) from Galapagos fisheries on local productions. These trials were implemented by Conservation International between the months of January and May 2022 in the canton of Santa Cruz, Galapagos.
 
-Specifically, productive aspects were evaluated, comparing a control diet based on commercial feeds with diets containing different proportions of FS. Feed and FS intakes, weight gains, and feed conversion ratios (FCR) were compared to estimate the relative effect of FS supplementation on pig and poultry production. In this way, the trials sought to characterize the practical feasibility and productive virtues of FS supplementation in the context of the Galapagos agricultural sector.
+Specifically, productive aspects were evaluated, comparing a control diet based on commercial feeds with diets containing different proportions of FS. Commercial feed and FS intakes, weight gains, and feed conversion ratios (FCR) were compared to estimate the relative effect of FS supplementation on pig and poultry production. In this way, the trials sought to characterize the practical feasibility and productive virtues of FS supplementation in the context of the Galapagos agricultural sector.
 
 
 
-*Note: for a detailed description of the experimental design see Annex 1. A general interpretation of the results and a cost benefit analysis is provided in Annex 2 and 3.*
+*Note: for a detailed description of the experimental design see Annex 1. A general interpretation of the results and a cost-benefit analysis are provided in Annex 2 and 3.*
+
 
 <p>&nbsp;</p>
 
-## 2. **Data and methods**
+## 2. **Data and Methods**
 
-Productive information from the trials was collected by the technical team of Conservation International Ecuador during the period of January to May 2022. The data contains observations of 8 pigs and 96 broilers. For both the pig and broiler trial, an exploratory visualization of the measured traits is performed. This is extended for the broiler test, testing the results for statistical significance using a significance level ($\alpha$) of 0.05. Differences between groups are described by Cohen's *d* effect size. The statistical significance of these differences is explored by mean ANOVA. All analyzes are in R version 4.2.0 using RStudio version 1.4.1743.
+Productive information from the trials was collected by the technical team of Conservation International Ecuador during the period of January to May 2022. The data contains observations of 8 pigs and 96 broilers. For both the pig and broiler trials, an exploratory visualization of the measured traits was performed. This was extended for the broiler trial, testing the results for statistical significance using a significance level ($\alpha$) of 0.05. Differences between groups were described by Cohen's *d* effect size. The statistical significance of these differences was explored by means of ANOVA. All analyzes were done in R version 4.2.0 using RStudio version 1.4.1743.
 
 
 <p>&nbsp;</p>
@@ -68,20 +69,21 @@ Productive information from the trials was collected by the technical team of Co
 
 The trial in pigs was carried out between the months of January and March 2022 on a farm located in the Bellavista parish, Santa Cruz, Galapagos. Eight 45-day-old crossbred pigs were randomly distributed into two dietary treatments: a control diet (T1) and a diet with 8% (dry weight) of FS (T2). It was not possible to form replicates given the low number of animals under evaluation. The assessment period was 80 days, ending with animals of 125 days (about 65 kg body weight on average). The animals remained in facilities according to what was detailed in the experimental design (Annex 1) and the traits evaluated were: feed intake, FS intake, weight gain, and carcass yield. Additionally, a sensory evaluation of pork meat was carried out in the laboratory of the Escuela Superior Politécnica del Litoral (ESPOL).
 
-No detailed statistical analyses were performed for this trial. The limited number of individuals under study and the intrinsic genetic variations between crossbred animals mean that statistically significant results cannot be verified. The results of this trial are qualitative in nature, documenting the use of FS in Galapagos pig production.
+No detailed statistical analyses were performed for this trial. The limited number of individuals under study and the intrinsic genetic variations between crossbred animals means that statistically significant results cannot be verified. The results of this trial are qualitative in nature, documenting the use of FS in Galapagos pig production.
+
 
 <p>&nbsp;</p>
 
 ![](/Users/marianoviz/Desktop/Galapagos_Fish_Silage-Animal_Trials/pictures/pigs.png){width=110%}
 
 
-Pigs trial - Galapagos April 2022 | Credit: Peggy Sigler
+Pigs trial - Galapagos April 2022 | Credit: Luis García Granda
 
 <p>&nbsp;</p>
 
 
-
-#### a. **Measured traits**
+ 
+#### a. **Measured Traits**
 
 ```{r}
 bal_table_pigs <- general_pigs %>% 
@@ -490,13 +492,13 @@ pigs_table %>%
 
 <p>&nbsp;</p>
 
-As stated above, the limited number and genetic characteristics of the animals evaluated do not allow statistically significant differences between the dietary treatments to be verified. Nevertheless, this trial shows that FS can be successfully used in Galapagos pig production as a feed supplement, achieving similar yields to those obtained with available commercial feeds.
+As indicated above, the limited number and the genetic characteristics of the animals evaluated did not allow to verify statistically significant differences between the dietary treatments. Nevertheless, this trial showed that FS can be successfully used in Galapagos pig production as a feed supplement, achieving similar yields to those obtained with available commercial feeds.
 
 <p>&nbsp;</p>
 
-#### b. **Sensory evaluation of the meat**
+#### b. **Sensory Evaluation of the Meat**
 
-An organoleptic assessment of the meat was carried out with the main objective of evaluating the presence of fish flavor in the animals fed with FS. Samples of animals fed with and without FS were given to 31 untrained panelists. These samples were clustered into groups of three (two samples belonging to the same dietary treatment and a distinct one belonging to the other) asking the panelists to identify the distinct sample. This evaluation methodology implies that if there were distinguishable differences between the dietary treatments, the panelists would be able to identify the distinct sample with a frequency greater than 33% (probability of selecting the distinct sample merely by chance).
+An organoleptic evaluation of the meat was carried out to assess the presence of fish flavor in the animals fed with FS. Samples from animals fed with and without FS were given to 31 untrained panelists. These samples were clustered into groups of three (two samples belonging to the same dietary treatment and a distinct one belonging to the other) asking the panelists to identify the distinct sample. The evaluation methodology assumes that if there were distinguishable differences between the dietary treatments, the panelists could identify the distinct sample with a frequency greater than 33% (probability of selecting the different sample simply by chance).
 
 <p>&nbsp;</p>
 
@@ -514,26 +516,25 @@ meat_test %>%
 
 <p>&nbsp;</p>
 
-These results deviate slightly from those expected due to chance if there were no distinguishable differences between the samples. However, according to Lawless and Heymann (2010), these differences are not enough to establish statistically significant differences. When asked, the panelists said they had not noticed a fish flavor in any of the samples evaluated.
+The results deviate slightly from those expected due to chance if there were no distinguishable differences between the samples. However, according to Lawless and Heymann (2010), these differences are not enough to establish statistically significant differences. When asked, the panelists said that they had not noticed any unusual flavors in the samples tested.
 
 
 
 ### B. Broilers
 
-The trial in broilers was carried out between the months of April and May 2022 on a farm located in the Santa Rosa parish, Santa Cruz, Galapagos province. Ninety-six, day-old broilers (Cobb 500) of either sex were randomized into three treatment
-groups with two replicates in each group (16 chicks per replicate). The dietary treatments were a control diet (T1), a diet containing 6% FS (T2), and a diet containing 12% FS (T3). The evaluation period was 46 days. Animals remained in facilities according to what was detailed in the experimental design (Annex 1) and the characteristics evaluated were: feed intake, SF intake, weight gain, and feed conversion ratio (FCR).
+The trial in broilers was carried out between the months of April and May 2022 on a farm located in the Santa Rosa parish, Santa Cruz, Galapagos province. Ninety-six, day-old broilers (Cobb 500) of either sex were randomized into three treatment groups with two replicates in each group (16 chicks per replicate). The dietary treatments were a control diet (T1), a diet containing 6% FS (T2), and a diet containing 12% FS (T3). The evaluation period was 46 days. Animals remained in facilities according to what was detailed in the experimental design (Annex 1) and the characteristics evaluated were: feed intake, SF intake, weight gain, and feed conversion ratio (FCR).
 
 <p>&nbsp;</p>
 
 ![](/Users/marianoviz/Desktop/Galapagos_Fish_Silage-Animal_Trials/pictures/pollos.png){width=110%}
 
 
-Broilers trial - Galapagos January 2022 | Credit: Peggy Sigler
+Broilers trial - Galapagos January 2022 | Credit: Luis García Granda
 
 <p>&nbsp;</p>
 
 
-#### a. **Measured traits**
+#### a. **Measured Traits**
 
 <p>&nbsp;</p>
 
@@ -617,7 +618,7 @@ ggplotly(mean_bal_plot)%>%
 
 
 ```
-**Figure 5.** Feed intake (g) for broilers of groups T1, T2, and T3. Teal (T1), gold (T2), and coral (T3) lines indicate average feed intakes for each group. An abnormality can be observed in the T3 group (possibly a measurement or data collection error) on days 27-28. Data: trial carried out in Galapagos by Conservation International Ecuador during the months of April to May 2022. 
+**Figure 5.** Feed intake (g) for broilers of groups T1, T2, and T3. Teal (T1), gold (T2), and coral (T3) lines indicate average feed intakes for each group. An abnormality can be observed in the T3 group on days 27-28 (possibly a measurement or data collection error). Data: trial carried out in Galapagos by Conservation International Ecuador during the months of April to May 2022. 
 
 <p>&nbsp;</p>
 
@@ -700,7 +701,7 @@ ggplotly(mean_fs_plot)%>%
 
 ```
 
-**Figure 6.** Fish Silage (FS) intake (g) for broilers of groups T1, T2, and T3. Teal (T1), gold (T2), and coral (T3) lines indicate average FS intakes for each group. As can be seen, control treatment T1 did not consume FS. An abnormality can be observed in the T3 group (possibly a measurement or data collection error) on days 27-28. Data: trial carried out in Galapagos by Conservation International Ecuador during the months of April to May 2022. 
+**Figure 6.** Fish Silage (FS) intake (g) for broilers of groups T1, T2, and T3. Teal (T1), gold (T2), and coral (T3) lines indicate average FS intakes for each group. As can be seen, control treatment T1 did not consume FS. An abnormality can be observed in the T3 group on days 27-28 (possibly a measurement or data collection error). Data: trial carried out in Galapagos by Conservation International Ecuador during the months of April to May 2022. 
 
 <p>&nbsp;</p>
 
@@ -783,7 +784,7 @@ ggplotly(mean_total_plot)%>%
 
 ```
 
-**Figure 7.** Total intake (g) for broilers of groups T1, T2, and T3. Teal (T1), gold (T2), and coral (T3) lines indicate average total intakes (feed plus FS) for each group. An abnormality can be observed in the T3 group (possibly a measurement or data collection error) on days 27-28. Data: trial carried out in Galapagos by Conservation International Ecuador during the months of April to May 2022. 
+**Figure 7.** Total intake (g) for broilers of groups T1, T2, and T3. Teal (T1), gold (T2), and coral (T3) lines indicate average total intakes (feed plus FS) for each group. An abnormality can be observed in the T3 group on days 27-28 (possibly a measurement or data collection error). Data: trial carried out in Galapagos by Conservation International Ecuador during the months of April to May 2022. 
 
 <p>&nbsp;</p>
 
@@ -828,7 +829,7 @@ ggplotly(mean_weight_plot)%>%
 
 ```
 
-**Figure 8.** Weight (g) for broilers of groups T1, T2, and T3. Teal (T1), gold (T2), and coral (T3) lines indicate average wight for each group. Data: trial carried out in Galapagos by Conservation International Ecuador during the months of April to May 2022. 
+**Figure 8.** Weight (g) for broilers of groups T1, T2, and T3. Teal (T1), gold (T2), and coral (T3) lines indicate average weight for each group. Data: trial carried out in Galapagos by Conservation International Ecuador during the months of April to May 2022. 
 
 <p>&nbsp;</p>
 
@@ -922,7 +923,7 @@ ggplotly(mean_fc_plot)%>%
 
 #### b. **Summary Statistics** 
 
-Feed intake, daily weight gain, and FCR were compared across the three treatments. The following statistical analyzes focus on daily weight gain and feed conversion since these parameters were effectively measured for each animal. Feed and fish silage were weighed and supplied to each subgroup of 16 animals without being able to obtain a real estimate of individual consumption. This individual consumption is assumed to be a proportional average of the total food supply.
+Feed intake, daily weight gain, and FCR were compared across the three treatments. The following statistical analyzes focus on daily weight gain and feed conversion; these parameters were effectively measured for each animal. Feed and FS were weighed and supplied to each replicate (16 animals), so a real estimate of individual consumption could not be obtained. This individual consumption is assumed to be a proportional average of the total food supplied.
 
 
 ```{r}
@@ -984,7 +985,7 @@ t3_ca_sd <- sd(t3_ca)
 
 
 The average daily weight gain per animal for the 46 days of the trial was `r round(t1_gd_mean, 2)` $\pm$ `r round(t1_gd_sd, 2)` g day^-1^ (*n* = 29), `r round(t2_gd_mean, 2)` $\pm$ `r round(t2_gd_sd, 2)` g day^-1^ (*n* = 32), `r round(t3_gd_mean, 2)` $\pm$ `r round(t3_gd_sd, 2)` g day^-1^ (*n* = 32), for diets T1, T2, and T3, respectively; values display the daily mean $\pm$ 1 standard deviation.
-The average FCR for the 46 days of the trial was `r round(t1_ca_mean, 2)` $\pm$ `r round(t1_ca_sd, 2)` g day^-1^ (*n* = 29), `r round(t2_ca_mean, 2)` $\pm$ `r round(t2_ca_sd, 2)` g day^-1^ (*n* = 32), `r round(t3_ca_mean, 2)` $\pm$ `r round(t3_ca_sd, 2)` g day^-1^ (*n* = 32), for diets T1, T2, and T3, respectively; values display the mean $\pm$ 1 standard deviation. The difference in the number of observations in the T1 group with respect to T2 and T3 (*n* = 29 versus *n* = 32) is due to the death of one of the animals during the trial and the voluntary exclusion of two observations for being considered not consistent with expected growth parameters in poultry production (see section *c.1. Exploring assumptions*).
+The average FCR for the 46 days of the trial was `r round(t1_ca_mean, 2)` $\pm$ `r round(t1_ca_sd, 2)` g day^-1^ (*n* = 29), `r round(t2_ca_mean, 2)` $\pm$ `r round(t2_ca_sd, 2)` g day^-1^ (*n* = 32), `r round(t3_ca_mean, 2)` $\pm$ `r round(t3_ca_sd, 2)` g day^-1^ (*n* = 32), for diets T1, T2, and T3, respectively; values display the mean $\pm$ 1 standard deviation. The difference in the number of observations in the T1 group with respect to T2 and T3 (*n* = 29 versus *n* = 32) is due to the death of one of the animals during the trial and the voluntary exclusion of two observations for not being considered consistent with expected growth parameters in poultry production (see section *c.1. Exploring assumptions*).
 
 <p>&nbsp;</p>
 
@@ -1021,11 +1022,11 @@ general_mean_table %>%
 <p>&nbsp;</p>
 
 
-#### c. **Difference in daily weight gain and feed conversion ratio for treatments T1, T2, and T3**
+#### c. **Difference in Daily Weight Gain and Feed Conversion Ratio for Treatments T1, T2, and T3**
 
-##### c.1. **Exploring assumptions**
+##### c.1. **Exploring Assumptions**
 
-The evaluation of the distribution of daily weight gain and FCR for the three treatments reveals the presence of outlier values in the T1 group (Figure 11, Figure 12). These observations were omitted from the summary statistics and subsequent analyses, as they were not consistent with expected growth parameters in poultry production; it is assumed that they were the result of negligent errors in data collection.
+Evaluation of the distribution of daily weight gain and FCR for the three treatments reveals the presence of outliers in group T1 (Figure 11, Figure 12). These observations were omitted from the summary statistics and subsequent analyses, as they were not consistent with expected growth parameters in poultry production; it is assumed that they were the result of negligent errors in data collection.
 
 
 ```{r}
@@ -1081,7 +1082,7 @@ qq2<- ggplot(data = general_selected, aes(sample = mean_ca)) +
 h1 / h2
 ```
 
-**Figure 11.** Histograms showing the distribution of mean daily weight gains and feed conversion ratio for broilers in groups T1, T2, and T3. The graphs corresponding to group T1 reveal the presence of outlier values. Data: trial carried out in Galapagos by Conservation International Ecuador during the months of April to May 2022.
+**Figure 11.** Histograms showing the distribution of mean daily weight gains and feed conversion ratio for broilers in groups T1, T2, and T3. The graphs corresponding to group T1 reveal the presence of outliers. Data: trial carried out in Galapagos by Conservation International Ecuador during the months of April to May 2022.
 
 
 <p>&nbsp;</p>
@@ -1091,7 +1092,7 @@ h1 / h2
 qq1 / qq2
 ```
 
-**Figure 12.** Q–Q (quantile-quantile) plots showing the distribution of mean daily weight gains and feed conversion ratio for broilers in groups T1, T2, and T3. The graphs corresponding to group T1 reveal the presence of outlier values. Data: trial carried out in Galapagos by Conservation International Ecuador during the months of April to May 2022. 
+**Figure 12.** Q–Q (quantile-quantile) plots showing the distribution of mean daily weight gains and feed conversion ratio for broilers in groups T1, T2, and T3. The graphs corresponding to group T1 reveal the presence of outliers. Data: trial carried out in Galapagos by Conservation International Ecuador during the months of April to May 2022. 
 
 <p>&nbsp;</p>
 
@@ -1160,7 +1161,7 @@ qq11 / qq21
 
 ##### c.2. **Statistically significant differences**
 
-The plots below show the distribution of average weight gains and FCR for the three treatments. A one-way ANOVA was then performed to compare the effect of these three dietary treatments on daily weight gain and FCR. Significant differences were explored using a significance level ($\alpha$) of 0.05. The differences between groups were quantified using the effect size (Cohen's *d*). If significant differences were demonstrated through the one-way ANOVA, Tukey's HSD test was used as a post-hoc pairwise test to define between which groups, in particular, these differences were statistically significant.
+The plots below show the distribution of average weight gain and FCR for the three treatments. A one-way ANOVA was then performed to compare the effect of these three dietary treatments on daily weight gain and FCR. Significant differences were explored using a significance level ($\alpha$) of 0.05. The differences between groups were quantified using the effect size (Cohen's *d*). If significant differences were demonstrated through the one-way ANOVA, Tukey's HSD test was used as a post-hoc pairwise test to define between which groups, in particular, these differences were statistically significant.
 
 <p>&nbsp;</p>
 
@@ -1247,10 +1248,10 @@ ca_tukey_tidy <- tidy(ca_tukey)
 
 ```
 
-As shown above, the average daily weight gain of the T1 diet is greater than T2 and smaller than T3; `r round(t1_gd_mean, 2)` $\pm$ `r round(t1_gd_sd, 2)` g day^-1^, `r round(t2_gd_mean, 2)` $\pm$ `r round(t2_gd_sd, 2)` g day^-1^, and `r round(t3_gd_mean, 2)` $\pm$ `r round(t3_gd_sd, 2)` g day^-1^, respectively. The absolute difference between T1 and T2 daily weight gain means is `r round(t1_gd_mean, 2) - round(t2_gd_mean, 2)` g day^-1^ (a `r round((t1_gd_mean - t2_gd_mean)/((t1_gd_mean + t2_gd_mean)/2)*100, 2)`% difference), while between T1 and T3 it is `r round(t1_gd_mean, 2) - round(t3_gd_mean, 2)` g day^-1^ (a `r round((t1_gd_mean - t3_gd_mean)/((t3_gd_mean + t3_gd_mean)/2)*100, 2)`% difference). These differences are significant; one-way ANOVA: p = `r round(gd_anova_tidy[1,6], 2)`. The effect size between diets T1 and T2 is medium (Cohen's *d* = `r round(gd_t1_t2_effsize$estimate,2)`) and between diets T1 and T3 is negligible (Cohen's *d* = `r round(gd_t1_t3_effsize$estimate,2)`). Applying Tukey's HSD test to determine if the relationship between the different groups is statistically significant, we see that there was no statistically significant difference in mean daily weight gains between T1 and  T2 (p = `r round(gd_tukey_tidy[1,7], 2)`) or between T1 and T3 (p = `r round(gd_tukey_tidy[2,7], 2)`). The only significant difference was observed between diets T3 and T2 (p = `r round(gd_tukey_tidy[3,7], 2)`).
+As shown above, the average daily weight gain of the T1 diet is greater than T2 and smaller than T3; `r round(t1_gd_mean, 2)` $\pm$ `r round(t1_gd_sd, 2)` g day^-1^, `r round(t2_gd_mean, 2)` $\pm$ `r round(t2_gd_sd, 2)` g day^-1^, and `r round(t3_gd_mean, 2)` $\pm$ `r round(t3_gd_sd, 2)` g day^-1^, respectively. The absolute difference between T1 and T2 daily weight gain means is `r round(t1_gd_mean, 2) - round(t2_gd_mean, 2)` g day^-1^ (a `r round((t1_gd_mean - t2_gd_mean)/((t1_gd_mean + t2_gd_mean)/2)*100, 2)`% difference), while between T1 and T3 it is `r round(t1_gd_mean, 2) - round(t3_gd_mean, 2)` g day^-1^ (a `r round((t1_gd_mean - t3_gd_mean)/((t3_gd_mean + t3_gd_mean)/2)*100, 2)`% difference). These differences are significant; one-way ANOVA: p = `r round(gd_anova_tidy[1,6], 2)`. The effect size between diets T1 and T2 is medium (Cohen's *d* = `r round(gd_t1_t2_effsize$estimate,2)`) and between diets T1 and T3 is negligible (Cohen's *d* = `r round(gd_t1_t3_effsize$estimate,2)`). Applying Tukey's HSD test to determine if the relationship between the different groups is statistically significant, we saw that there was no statistically significant difference in mean daily weight gains between T1 and T2 (p = `r round(gd_tukey_tidy[1,7], 2)`) or between T1 and T3 (p = `r round(gd_tukey_tidy[2,7], 2)`). The only significant difference was observed between diets T3 and T2 (p = `r round(gd_tukey_tidy[3,7], 2)`).
 
 
-The mean FCR of diet T1 is lower than T2 and higher than T3; `r round(t1_ca_mean, 2)` $\pm$ `r round(t1_ca_sd, 2)` g day^-1^, `r round(t2_ca_mean, 2)` $\pm$ `r round(t2_ca_sd, 2)` g day^-1^, and `r round(t3_ca_mean, 2)` $\pm$ `r round(t3_ca_sd, 2)` g day^-1^, respectively. The absolute difference between the means of T1 and T2 is `r round(t1_ca_mean, 2) - round(t2_ca_mean, 2)` g day^-1^ (a `r round((t1_ca_mean - t2_ca_mean)/((t1_ca_mean + t2_ca_mean)/2)*100, 2)`% difference), and between T1 and T3 it is `r round(t1_ca_mean, 2) - round(t3_ca_mean, 2)` g day^-1^ (a `r round((t1_ca_mean - t3_ca_mean)/((t3_ca_mean + t3_ca_mean)/2)*100, 2)`% difference). These differences are significant; one-way ANOVA: p = `r round(ca_anova_tidy[1,6], 4)`. The effect size between diets T1 and T2 is small (Cohen's *d* = `r round(ca_t1_t2_effsize$estimate,2)`), while between diets T1 and T3 it is large (Cohen's *d* = `r round(ca_t1_t3_effsize$estimate,2)`). As evidenced by Tukey's HSD test, the differences in FCR between diets T1 and T3 (p = `r round(ca_tukey_tidy[2,7], 3)`) and T2 and T3 (p = `r round(ca_tukey_tidy[3,7], 4)`) are statistically significant.
+Mean FCR of diet T1 is lower than T2 and higher than T3; `r round(t1_ca_mean, 2)` $\pm$ `r round(t1_ca_sd, 2)` g day^-1^, `r round(t2_ca_mean, 2)` $\pm$ `r round(t2_ca_sd, 2)` g day^-1^, and `r round(t3_ca_mean, 2)` $\pm$ `r round(t3_ca_sd, 2)` g day^-1^, respectively. The absolute difference between the means of T1 and T2 is `r round(t1_ca_mean, 2) - round(t2_ca_mean, 2)` g day^-1^ (a `r round((t1_ca_mean - t2_ca_mean)/((t1_ca_mean + t2_ca_mean)/2)*100, 2)`% difference), and between T1 and T3 is `r round(t1_ca_mean, 2) - round(t3_ca_mean, 2)` g day^-1^ (a `r round((t1_ca_mean - t3_ca_mean)/((t3_ca_mean + t3_ca_mean)/2)*100, 2)`% difference). These differences are significant; one-way ANOVA: p = `r round(ca_anova_tidy[1,6], 4)`. The effect size between diets T1 and T2 is small (Cohen's *d* = `r round(ca_t1_t2_effsize$estimate,2)`), while between diets T1 and T3 is large (Cohen's *d* = `r round(ca_t1_t3_effsize$estimate,2)`). As evidenced by Tukey's HSD test, the differences in FCR between diets T1 and T3 (p = `r round(ca_tukey_tidy[2,7], 3)`) and T2 and T3 (p = `r round(ca_tukey_tidy[3,7], 4)`) are statistically significant.
 
 In summary, the effects on average daily weight gain of the control diet (T1) compared to the diets with FS (T2 and T3) are not statistically different. The only significant difference in average daily weight gain is seen between the diets T2 and T3, with the average daily weight gain of diet T3 being `r round((t3_gd_mean - t2_gd_mean)/((t3_gd_mean + t2_gd_mean)/2)*100, 2)`% higher than T2. 
 The effect of diets with FS on FCR showed significant differences with respect to the control diet. In particular, the difference between T3 and T1 turned out to be large and statistically significant (Cohen's *d* = `r round(ca_t1_t3_effsize$estimate,2)`; Tukey's HSD p = `r round(ca_tukey_tidy[2,7], 3)`). Overall, T3 delivered the best results: higher average daily weight gain and lower FCR.
@@ -1262,9 +1263,10 @@ The effect of diets with FS on FCR showed significant differences with respect t
 
 Exploratory data analysis and interpretation of trial results reveal the following findings:
 
-- The pig trial shows that FS can be successfully used in Galapagos pig production as a feed supplement, achieving similar yields to those obtained with available commercial feeds and without imparting an undesirable flavor to the meat.
+- The trial with pigs showed that FS can be successfully used in Galapagos pig production as a feed supplement, achieving similar yields to those obtained with available commercial feeds and without imparting an undesirable flavor to the meat.
 
-- The broilers trial affirms what was observed in the pig trial and also allows revealing statistically significant differences between the groups under evaluation. Of the three dietary treatments considered, the group fed with 12% FS (T3) showed the highest average daily weight gain and the lowest FCR.
+- The trial with broilers confirmed what was observed in the trial with pigs and also revealed statistically significant differences between the groups evaluated. Of the three dietary treatments considered, the group fed 12% FS (T3) showed the highest average daily weight gain and the lowest FCR.
+
 
 
 <p>&nbsp;</p>
@@ -1274,11 +1276,14 @@ Exploratory data analysis and interpretation of trial results reveal the followi
 Lawless, H. and Heymann, H. (2010) Sensory Evaluation of Food Science Principles and Practices. Chapter 1, 2nd Edition, Ithaca, New York. 
 http://dx.doi.org/10.1007/978-1-4419-6488-5
 
-Annex 1. [Experimental Design](https://drive.google.com/file/d/1TtXkqnzumyHKhrtnpN-LIFp3BXtdK5mf/view?usp=sharing)
+Annex 1. <a href="https://drive.google.com/file/d/1TtXkqnzumyHKhrtnpN-LIFp3BXtdK5mf/view?usp=sharing)
+" target="_new">Experimental Design</a>
 
-Annex 2. Results of Broilers Trial 
+Annex 2. <a href="https://drive.google.com/file/d/1TtXkqnzumyHKhrtnpN-LIFp3BXtdK5mf/view?usp=sharing)
+" target="_new">Results of Broilers Trial (Spanish)</a>
 
-Annex 3. Results of Pigs Trial
+Annex 3. <a href="https://drive.google.com/file/d/1TtXkqnzumyHKhrtnpN-LIFp3BXtdK5mf/view?usp=sharing)
+" target="_new">Results of Pigs Trial (Spanish)</a>
 
 
 
